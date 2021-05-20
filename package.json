@@ -1,0 +1,29 @@
+{
+  "name": "webpack-project",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A project with the purpose of using webpack to bundle html, css, and js files.",
+  "author": "Juan Perez Jr",
+  "license": "MIT",
+  "homepage": "https://github.com/JRPerezJr/complete-junior-to-senior-webpack-build",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JRPerezJr/complete-junior-to-senior-webpack-build.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JRPerezJr/complete-junior-to-senior-webpack-build/issues"
+  },
+  "engines": {
+    "node": "14.17.0",
+    "npm": "6.14.13"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+  },
+  "devDependencies": {
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
