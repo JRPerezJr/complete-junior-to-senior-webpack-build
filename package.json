@@ -22,7 +22,7 @@
     "clean": "rm dist/bundle.js",
     "build-dev": "webpack --mode=development",
     "build-prod": "webpack --mode=production",
-    "start": "npx webpack serve --hot --mode=development"
+    "start": "npx webpack serve --mode=development"
   },
   "babel": {
     "presets": [
@@ -33,7 +33,6 @@
     "@babel/core": "^7.14.3",
     "@babel/eslint-parser": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
-    "@hot-loader/react-dom": "^17.0.1",
     "eslint": "^7.26.0",
     "eslint-webpack-plugin": "^2.5.4",
     "webpack": "^5.37.1",
@@ -42,8 +41,7 @@
   },
   "dependencies": {
     "babel-loader": "^8.2.2",
-    "babel-preset-env": "^1.7.0",
-    "react-hot-loader": "^4.13.0"
+    "babel-preset-env": "^1.7.0"
   },
   "browserslist": [
     "> 1%",
