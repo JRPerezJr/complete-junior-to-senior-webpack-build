@@ -23,8 +23,15 @@
     "build": "webpack --mode=production",
     "dev": "npx webpack serve --mode=development"
   },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
   "devDependencies": {
     "@babel/core": "^7.14.3",
+    "@babel/eslint-parser": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
     "eslint": "^7.26.0",
     "eslint-webpack-plugin": "^2.5.4",
     "webpack": "^5.37.1",
