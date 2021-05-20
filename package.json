@@ -19,11 +19,17 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+    "start": "webpack --mode=development",
+    "build": "webpack --mode=production"
   },
   "devDependencies": {
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0"
   }
 }
