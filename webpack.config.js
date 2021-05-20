@@ -1,10 +1,10 @@
+const path = require('path');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
-  entry: ['./src/index.js'],
+  entry: ['react-hot-loader/patch', './src/index.js'],
   output: {
-    path: __dirname + '/dist',
-    publicPath: '/',
+    path: path.resolve(__dirname + 'dist'),
     filename: 'bundle.js',
   },
   devServer: {
@@ -15,9 +15,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        exclude: /(node_modules)/,
+        test: /\.js$/,
         use: 'babel-loader',
+        exclude: /node_modules/,
       },
     ],
   },
