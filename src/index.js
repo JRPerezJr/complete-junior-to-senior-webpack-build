@@ -1,1 +1,1 @@
-console.log('webpack ready!');
+console.log('Webpack is ready!');
